@@ -62,9 +62,18 @@
             .m-b-md {
                 margin-bottom: 30px;
             }
+            .myJob{
+                margin-top: 100px;
+                text-align: center;
+            }
+            .jobContent{
+                font-size: 50px;
+                font-weight: bolder;
+            }
         </style>
     </head>
     <body>
+        <div class="myJob"><span class="jobContent">我的个人项目</span></div>
         <div class="flex-center position-ref full-height">
             @if (Route::has('login'))
                 <div class="top-right links">
