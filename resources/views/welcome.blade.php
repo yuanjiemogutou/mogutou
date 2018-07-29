@@ -75,6 +75,7 @@
     <body>
         <div class="myJob"><span class="jobContent">我的个人项目</span></div>
         <div class="flex-center position-ref full-height">
+            <span>欢迎来到我的个人项目页</span>
             @if (Route::has('login'))
                 <div class="top-right links">
                     @auth

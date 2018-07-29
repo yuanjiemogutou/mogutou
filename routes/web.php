@@ -15,14 +15,14 @@ Route::get('/', function () {
     return view('welcome');
 });
 // 文章列表
-Route::get('/posts', '\app\Http\Controllers\PostController@index');
+Route::get('/posts', 'PostController@index');
 // 文章详情
-Route::get('/posts/{post}', '\app\Http\Controllers\PostController@show');
+Route::get('/posts/{post}', 'PostController@show');
 // 创建文章
-Route::get('/posts/create','\app\Http\Controllers\PostController@create');
-Route::post('/posts/store','\app\Http\Controllers\PostController@store');
+Route::get('/posts/create','PostController@create');
+Route::post('/posts/store','PostController@store');
 // 编辑文章
-Route::get('/posts/{post}/edit','\app\Http\Controllers\PostController@edit');
-Route::put('/posts/{post}','\app\Http\Controllers\PostController@update');
+Route::get('/posts/{post}/edit','PostController@edit');
+Route::put('/posts/{post}','PostController@update');
 // 删除文章
-Route::get('/posts/delete','\app\Http\Controllers\PostController@delete');
+Route::get('/posts/delete','PostController@delete');
